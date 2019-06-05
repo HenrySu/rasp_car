@@ -5,7 +5,7 @@ import WheelConfig from "./WheelConfig";
 //     require("pigpio").Gpio;
 const Gpio = pigpio.Gpio;
 
-export default class WheelMotorController {
+export default class WheelController {
     constructor(wheelConfig: WheelConfig) {
         this.setupGpios(wheelConfig);
         this.Speed = 0;

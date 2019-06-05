@@ -1,14 +1,14 @@
-import WheelMotorController from "./WheelMotorController";
+import WheelController from "./WheelController";
 
 export default class CarController {
 
-    constructor(leftWheel: WheelMotorController, rightWheel: WheelMotorController) {
+    constructor(leftWheel: WheelController, rightWheel: WheelController) {
         this._leftWheel = leftWheel;
         this._rightWheel = rightWheel;
     }
 
-    private _leftWheel: WheelMotorController;
-    private _rightWheel: WheelMotorController;
+    private _leftWheel: WheelController;
+    private _rightWheel: WheelController;
     // todo: use async and make all wheels move simutaniously
     moveForward() {
         this._leftWheel.forward();
