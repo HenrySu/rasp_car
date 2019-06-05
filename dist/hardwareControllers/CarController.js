@@ -5,7 +5,7 @@ class CarController {
         this._leftWheel = leftWheel;
         this._rightWheel = rightWheel;
     }
-    //todo: use async and make all wheels move simutaniously
+    // todo: use async and make all wheels move simutaniously
     moveForward() {
         this._leftWheel.forward();
         this._rightWheel.forward();

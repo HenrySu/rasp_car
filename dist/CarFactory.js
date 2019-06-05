@@ -7,8 +7,8 @@ const WheelMotorController_1 = __importDefault(require("./hardwareControllers/Wh
 const CarController_1 = __importDefault(require("./hardwareControllers/CarController"));
 class CarFactory {
     createZhiyuCar() {
-        let leftWheel = new WheelMotorController_1.default({ ForwardPinNum: 22, BackwardPinNum: 27, PwmPinNum: 18 });
-        let rightWheel = new WheelMotorController_1.default({ ForwardPinNum: 25, BackwardPinNum: 24, PwmPinNum: 23 });
+        const leftWheel = new WheelMotorController_1.default({ ForwardPinNum: 22, BackwardPinNum: 27, PwmPinNum: 18 });
+        const rightWheel = new WheelMotorController_1.default({ ForwardPinNum: 25, BackwardPinNum: 24, PwmPinNum: 23 });
         return new CarController_1.default(leftWheel, rightWheel);
     }
 }

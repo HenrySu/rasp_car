@@ -4,8 +4,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const pigpio_1 = __importDefault(require("pigpio"));
-// const Gpio = process.env.NODE_ENV !== "production" ? 
-//     require("pigpio-mock").Gpio : 
+// const Gpio = process.env.NODE_ENV !== "production" ?
+//     require("pigpio-mock").Gpio :
 //     require("pigpio").Gpio;
 const Gpio = pigpio_1.default.Gpio;
 class WheelMotorController {
