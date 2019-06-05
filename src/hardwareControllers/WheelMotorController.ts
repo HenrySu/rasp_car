@@ -1,5 +1,5 @@
 import pigpio from "pigpio";
-import WheelConfig from "../models/WheelConfig";
+import WheelConfig from "./WheelConfig";
 // const Gpio = process.env.NODE_ENV !== "production" ?
 //     require("pigpio-mock").Gpio :
 //     require("pigpio").Gpio;
